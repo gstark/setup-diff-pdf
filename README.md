@@ -14,6 +14,8 @@ GitHub Action to install [diff-pdf](https://github.com/vslavik/diff-pdf).
 
 For the version of `diff-pdf` that can be specified, see [the diff-pdf releases](https://github.com/vslavik/diff-pdf/releases).
 
+For the `linux` version you may also specify `master` to use the latest version from the `master` branch.
+
 ## Supported Platforms
 
 - ubuntu-latest
