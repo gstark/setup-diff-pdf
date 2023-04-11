@@ -13,7 +13,7 @@ const REQUIRED_PACKAGES = [
 export async function setup(version) {
   await exec.exec('sudo apt-get update');
   await exec.exec(`sudo apt-get install ${REQUIRED_PACKAGES.join(' ')}`);
-  const branch = version === 'branch' ? 'master' : `v${version}`;
+  const branch = version === 'master' ? 'master' : `v${version}`;
   await exec.exec(`git clone https://github.com/vslavik/diff-pdf.git -b ${branch} --depth 1 ${WORKING_DIR}`);
 
   const buildOptions = {
